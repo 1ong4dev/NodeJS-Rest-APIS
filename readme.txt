@@ -11,7 +11,8 @@ multer
 joi
 nodemon
 npm status code 
-
+swagger-ui-express
+swagger-jsdoc
 
 
 

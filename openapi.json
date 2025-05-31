@@ -1,0 +1,226 @@
+{
+    "openapi": "3.0.3",
+    "info": {
+      "title": "NodeJS APIS",
+      "description": "This is Swagger Documetation",
+      "version": "1.0.0",
+      "contact": {}
+    },
+    "servers": [
+      {
+        "url": "https://localhost:3000"
+      }
+    ],
+    "paths": {
+      "/api/v1/auth/register": {
+        "post": {
+          "tags": [
+            "Auth USER APIS"
+          ],
+          "summary": "Register USER APIs",
+          "description": "",
+          "operationId": "postapiv1authregister",
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "Successful response",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "example": {}
+                  }
+                }
+              }
+            }
+          },
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "example": {
+                    "name": "long sieudeptrai"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/v1/auth/login": {
+        "post": {
+          "tags": [
+            "Auth USER APIS"
+          ],
+          "summary": "Login USER APIs",
+          "description": "",
+          "operationId": "postapiv1authlogin",
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "Successful response",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "example": {}
+                  }
+                }
+              }
+            }
+          },
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "example": {
+                    "email": "long141@gmail.com"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "3000/api/v1/auth/profile": {
+        "get": {
+          "tags": [
+            "Auth USER APIS"
+          ],
+          "summary": "Profile USER APIs",
+          "description": "",
+          "operationId": "get3000apiv1authprofile",
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "Successful response",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "example": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/": {
+        "get": {
+          "summary": "Post With User APIs",
+          "description": "",
+          "operationId": "get",
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "Successful response",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "example": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        "post": {
+          "tags": [
+            "Post USER APIS"
+          ],
+          "summary": "addPOST APIs",
+          "description": "",
+          "operationId": "post",
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "Successful response",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "example": {}
+                  }
+                }
+              }
+            }
+          }
+        },
+        "put": {
+          "tags": [
+            "Post USER APIS"
+          ],
+          "summary": "updatePost APIs",
+          "description": "",
+          "operationId": "put",
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "Successful response",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "example": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/v1/auth/addPost": {
+        "delete": {
+          "tags": [
+            "Post USER APIS"
+          ],
+          "summary": "deletePost APIs",
+          "description": "",
+          "operationId": "deleteapiv1authaddPost",
+          "parameters": [],
+          "responses": {
+            "200": {
+              "description": "Successful response",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "object",
+                    "example": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "components": {
+      "schemas": {},
+      "securitySchemes": {
+        "basicAuth": {
+          "type": "http",
+          "scheme": "basic"
+        },
+        "digestAuth": {
+          "type": "http",
+          "scheme": "digest"
+        }
+      }
+    },
+    "tags": [
+      {
+        "name": "Auth USER APIS",
+        "description": ""
+      },
+      {
+        "name": "Post USER APIS",
+        "description": ""
+      }
+    ]
+  }

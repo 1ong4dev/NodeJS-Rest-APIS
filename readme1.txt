@@ -18,3 +18,8 @@
 /models
     -user.model.js [name, email, password, gender]
     -post.model.js [title, content, status, userId]
+
+
+
+
+    https://postmantoopenapiconverter.netlify.app/
